@@ -45,7 +45,7 @@
 
 <script>
 import axios from "axios";
-import Article from "./Article";
+import Article from "../components/Article";
 export default {
   name: "ListAllArticles",
 

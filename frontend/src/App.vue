@@ -1,19 +1,19 @@
 <template>
   <div id="app">
     <!-- <ListOfTodos /> -->
-    <ListAllArticles />
+    <Home />
   </div>
 </template>
 
 <script>
 // import ListOfTodos from "./components/Todos/ListOfTodos";
-import ListAllArticles from "./components/AxiosTutorial/ListAllArticles";
+import Home from "./pages/Home";
 
 export default {
   name: "App",
   components: {
     // ListOfTodos,
-    ListAllArticles,
+    Home,
   },
 };
 </script>
