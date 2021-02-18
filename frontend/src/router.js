@@ -6,6 +6,7 @@ import Home from "./pages/Home.vue"
 import About from "./pages/About.vue"
 import AddArticle from "./pages/AddArticle.vue"
 import Article from "./pages/Article.vue"
+import UpdateArticle from "./pages/UpdateArticle.vue"
 //IMPORT THE COMPONENTS
 
 
@@ -33,6 +34,11 @@ const router = new Router({
       path: "/articles/:id",
       name: "Article",
       component: Article
+    },
+    {
+      path: "/articles/update/:id",
+      name: "UpdateArticle",
+      component: UpdateArticle
     }
     // {
     //   path: "/articles/:id",

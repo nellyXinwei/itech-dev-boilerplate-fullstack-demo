@@ -24,6 +24,7 @@
 export default {
   name: "Article",
   props: ["eachArticle"],
+
   methods: {},
 };
 </script>
