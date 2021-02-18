@@ -3,7 +3,7 @@
     <!-- LIST ALL ARTICLE -->
     <div style="display: flex; width: 100%">
       <div v-for="eachArticle in filterArticles" v-bind:key="eachArticle.id">
-        <Article v-bind:eachArticle="eachArticle"></Article>
+        <ArticleCard v-bind:eachArticle="eachArticle"></ArticleCard>
       </div>
     </div>
     <!-- LIST ALL ARTICLE -->
@@ -12,7 +12,7 @@
     <div style="display: flex; width: 100%">
       <h2>Hacker Articles:</h2>
       <div v-for="eachArticle in hackerArticles" v-bind:key="eachArticle.id">
-        <Article v-bind:eachArticle="eachArticle"></Article>
+        <ArticleCard v-bind:eachArticle="eachArticle"></ArticleCard>
       </div>
     </div>
 
@@ -21,7 +21,7 @@
     <div style="display: flex; width: 100%">
       <h2>Hipster Articles:</h2>
       <div v-for="eachArticle in hipsterArticles" v-bind:key="eachArticle.id">
-        <Article v-bind:eachArticle="eachArticle"></Article>
+        <ArticleCard v-bind:eachArticle="eachArticle"></ArticleCard>
       </div>
     </div>
 
@@ -30,7 +30,7 @@
     <div style="display: flex; width: 100%">
       <h2>Hustler Articles:</h2>
       <div v-for="eachArticle in hustlerArticles" v-bind:key="eachArticle.id">
-        <Article v-bind:eachArticle="eachArticle"></Article>
+        <ArticleCard v-bind:eachArticle="eachArticle"></ArticleCard>
       </div>
     </div>
   </div>
@@ -38,12 +38,12 @@
 
 <script>
 import axios from "axios";
-import Article from "../components/Article";
+import ArticleCard from "../components/ArticleCard";
 export default {
   name: "Home",
 
   components: {
-    Article,
+    ArticleCard,
   },
 
   data() {

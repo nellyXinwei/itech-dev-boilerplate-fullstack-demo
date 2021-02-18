@@ -5,6 +5,7 @@ import Router from "vue-router";
 import Home from "./pages/Home.vue"
 import About from "./pages/About.vue"
 import AddArticle from "./pages/AddArticle.vue"
+import Article from "./pages/Article.vue"
 //IMPORT THE COMPONENTS
 
 
@@ -28,6 +29,11 @@ const router = new Router({
       name: 'AddArticle',
       component: AddArticle
     },
+    {
+      path: "/articles/:id",
+      name: "Article",
+      component: Article
+    }
     // {
     //   path: "/articles/:id",
     //   name: 'Article',
