@@ -1,17 +1,20 @@
 <template>
-  <div id="app">
-    <!-- <ListOfTodos /> -->
-    <div><router-view /></div>
-    <!-- <Home /> -->
+  <div id="app" style="width: 100%">
+    <Navbar></Navbar>
+    <div>
+      <router-view />
+    </div>
   </div>
 </template>
 
 <script>
-// import ListOfTodos from "./components/Todos/ListOfTodos";
-// import Home from "./pages/Home";
-
+import Navbar from "./components/Navbar";
 export default {
   name: "App",
+
+  components: {
+    Navbar,
+  },
 };
 </script>
 

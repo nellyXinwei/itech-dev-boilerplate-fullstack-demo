@@ -4,6 +4,7 @@ import Router from "vue-router";
 //IMPORT THE COMPONENTS
 import Home from "./pages/Home.vue"
 import About from "./pages/About.vue"
+import AddArticle from "./pages/AddArticle.vue"
 //IMPORT THE COMPONENTS
 
 
@@ -21,6 +22,11 @@ const router = new Router({
       path: "/about",
       name: 'About',
       component: About
+    },
+    {
+      path: "/add-article",
+      name: 'AddArticle',
+      component: AddArticle
     },
     // {
     //   path: "/articles/:id",
