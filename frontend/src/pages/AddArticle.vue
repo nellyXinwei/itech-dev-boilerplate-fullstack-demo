@@ -1,9 +1,3 @@
-// Create new Article = post request
-// new page: AddArticle.vue
-// form
-// post request 
-
-
 <template>
   <div>
     <!-- HEADER -->
@@ -22,6 +16,7 @@
 </template>
 
 <script>
+import axios from "axios";
 export default {
   name: "AddArticle",
   data() {
@@ -31,9 +26,23 @@ export default {
   },
 
   methods: {
-    addArticle(event) {
+    addArticle: async function (event) {
       event.preventDefault();
-      console.log("Add this article" + this.name);
+      console.log("Add this article: " + this.name);
+
+      try {
+        const response = await axios.post("http://localhost:1337/articles", {
+          name: this.name,
+          content: "",
+          thumbnail: "",
+          categories: "hacker",
+          author: "",
+        });
+        console.log(response);
+      } catch (error) {
+        this.error = error;
+      }
+
       this.name = "";
     },
   },
