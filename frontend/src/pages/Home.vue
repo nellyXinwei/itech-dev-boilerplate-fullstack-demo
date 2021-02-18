@@ -3,6 +3,8 @@
     <!-- HEADER -->
     <div style="display: flex; align-items: center">
       <h1>Axios Tutorial</h1>
+      <router-link to="/">Home </router-link>
+      <router-link to="/about">About </router-link>
       <div style="margin: 0 20px"><input type="text" v-model="search" /></div>
     </div>
     <!-- HEADER -->
@@ -47,7 +49,7 @@
 import axios from "axios";
 import Article from "../components/Article";
 export default {
-  name: "ListAllArticles",
+  name: "Home",
 
   components: {
     Article,
